@@ -2,6 +2,7 @@
 @use 'includes/header.scss';
 @use 'includes/footer.scss';
 @use 'includes/apropos.scss';
+@use 'includes/cli.scss';
 @use 'colors.scss' as colors;
 @use 'theme.scss';
 
@@ -38,7 +39,7 @@ main {
     font-size: large;
 
     .presentation {
-        margin: 10rem 2rem 5rem 2rem;
+        margin-top: 10rem;
 
         .intro {
             @media (max-width: 804px) {
@@ -78,7 +79,7 @@ main {
         }
     }
 
-    #about {
-        width: 100%;
+    section {
+        margin: 5rem 0;
     }
 }

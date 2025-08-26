@@ -1,0 +1,51 @@
+.cli {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    .content {
+        padding: 1rem 2rem;
+        height: fit-content;
+        align-self: center;
+        justify-self: center;
+
+        h3 {
+            margin: 1rem 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            gap: .4rem;
+            display: grid;
+            width: 100%;
+
+            span {
+                color: var(--main-color);
+                font-size: larger;
+            }
+        }
+    }
+
+    .competences {
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+
+    .interets {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 804px) {
+    .cli {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .content {
+            width: auto;
+            align-self: normal;
+        }
+    }
+}
