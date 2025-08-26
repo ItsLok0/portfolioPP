@@ -1,0 +1,14 @@
+@use '../colors.scss' as colors;
+
+.blur {
+    width: fit-content;
+    background: colors.$bg_blur;
+    border-radius: 1rem;
+    border: 2px solid var(--border);
+    color: colors.$white;
+    padding: 1rem;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    position: relative;
+    z-index: 1;
+}

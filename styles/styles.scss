@@ -1,0 +1,84 @@
+@use 'blur/blur.scss';
+@use 'includes/header.scss';
+@use 'includes/footer.scss';
+@use 'includes/apropos.scss';
+@use 'colors.scss' as colors;
+@use 'theme.scss';
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+main {
+    flex: 1;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+
+    .presentation {
+        margin: 10rem 2rem 5rem 2rem;
+
+        .intro {
+            @media (max-width: 804px) {
+                text-align: center;
+            }
+        }
+
+        .blur {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 3rem;
+
+            @media (max-width: 804px) {
+                align-items: center;
+            }
+
+            p, h1 {
+                margin: 0;
+
+                span {
+                    color: var(--main-color);
+                }
+            }
+
+            &.btn {
+                padding: 1rem;
+                border-color: colors.$white;
+                transition: border-color 0.2s ease;
+                text-decoration: none;
+
+                &:hover, &:focus, &:focus-visible {
+                    border-color: var(--main-color);
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    #about {
+        width: 100%;
+    }
+}

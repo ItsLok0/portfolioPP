@@ -1,0 +1,53 @@
+.apropos {
+    margin: 5rem 0;
+    width: 100%;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+
+    &.blur {
+        padding: 0;
+    }
+
+    .content {
+        padding: 3rem 5rem;
+        gap: .8rem;
+        display: grid;
+        
+        p, h2, h3, ul {
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin: 1rem 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            gap: .4rem;
+            display: grid;
+            width: 100%;
+
+            span {
+                color: var(--main-color);
+                font-size: larger;
+            }
+        }
+    }
+}
+
+@media (max-width: 804px) {
+    .apropos {
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem;
+        }
+    }
+}

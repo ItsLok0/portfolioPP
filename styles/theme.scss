@@ -1,0 +1,58 @@
+@use 'colors.scss' as colors;
+
+/* Thème Ferrari */
+body[data-theme="ferrari"] {
+  --main-color: #E1B900;
+  --border: #E1B900;
+  --bg-image: url("../img/ferrari-bg.jpg");
+}
+
+/* Thème Redbull */
+body[data-theme="redbull"] {
+  --main-color: #4B75DA;
+  --border: #4B75DA;
+  --bg-image: url("../img/redbull-bg.jpg");
+}
+
+/* Thème Mercedes */
+body[data-theme="mercedes"] {
+  --main-color: #00D2BE;
+  --border: #00D2BE;
+  --bg-image: url("../img/mercedes-bg.jpg");
+}
+
+/* Thème McLaren */
+body[data-theme="mclaren"] {
+  --main-color: #FF6F00;
+  --border: #FF6F00;
+  --bg-image: url("../img/mclaren-bg.jpg");
+}
+
+p, label, select, a {
+    color: colors.$white;
+}
+
+p {
+    font-size: larger;
+}
+
+h1, h2, h3 {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.underline {
+  text-decoration: underline;
+}
