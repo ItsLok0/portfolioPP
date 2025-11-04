@@ -17,7 +17,7 @@
                         <a class="link active" href="./">Accueil</a>
                     </li>
                     <li>
-                        <a class="link" href="#">À propos</a>
+                        <a class="link" href="pages/project.php">Projets & expériences</a>
                     </li>
                     <li>
                         <a class="link" href="pages/contact.php">Me contacter</a>

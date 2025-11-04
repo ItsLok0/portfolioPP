@@ -1,0 +1,29 @@
+#contact {
+    width: 100%;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    &.blur {
+        padding: 0;
+    }
+
+    .content {
+        padding: 3rem 5rem;
+        gap: .8rem;
+        display: grid;
+
+        span {
+            color: var(--main-color);
+            font-weight: bold;
+        }
+    }
+}

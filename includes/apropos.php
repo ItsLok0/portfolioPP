@@ -12,7 +12,7 @@
         </p>
         <p>
             Au travers de mes <span>études, stages et premier CDI</span>, j'ai acquis des compétences solides en HTML/CSS et JS.
-            J'ai également appris à utiliser <span>Angular (framework), Wordpress (CMS) et GitLab/GitHub (versioning)</span>.
+            J'ai également appris à utiliser <span>Angular (framework), Wordpress (CMS)</span> et <span>GitLab/GitHub (versioning)</span>.
         </p>
     </div>
 </div>

@@ -20,7 +20,7 @@
         <h3>Intérêts</h3>
         <ul>
             <li>Formule 1</li>
-            <li>Pratique sportive (musculation, course)</li>
+            <li>Pratique sportive (musculation, course à pied)</li>
             <li>Bourse/Crypto</li>
         </ul>
     </div>
