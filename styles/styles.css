@@ -357,7 +357,7 @@ h3 {
   margin: 0;
 }
 #contact p {
-  margin: 1rem 0;
+  margin: 0;
 }
 #contact.blur {
   padding: 0;
@@ -370,6 +370,53 @@ h3 {
 #contact .content span {
   color: var(--main-color);
   font-weight: bold;
+}
+#contact .content .info-link {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .content .info-link div {
+  width: 100%;
+}
+#contact .content .info-link .contact-form form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact .content .info-link .contact-form form .trap {
+  display: none;
+}
+#contact .content .info-link .contact-form form input, #contact .content .info-link .contact-form form textarea, #contact .content .info-link .contact-form form button {
+  padding: 0.5rem;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: medium;
+}
+#contact .content .info-link .contact-form form input:hover, #contact .content .info-link .contact-form form input:focus, #contact .content .info-link .contact-form form textarea:hover, #contact .content .info-link .contact-form form textarea:focus, #contact .content .info-link .contact-form form button:hover, #contact .content .info-link .contact-form form button:focus {
+  border-color: var(--main-color);
+  cursor: pointer;
+  outline: none;
+}
+#contact .content .info-link .contact-form form input::placeholder, #contact .content .info-link .contact-form form textarea::placeholder, #contact .content .info-link .contact-form form button::placeholder {
+  color: #f5f5f5;
+}
+#contact .content .info-link .contact-form form textarea {
+  font-size: larger;
+}
+#contact .content .info-link .links {
+  font-size: large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .content .info-link .links ul {
+  list-style: none;
+  padding: 0;
+  gap: 0.4rem;
+  display: grid;
 }
 
 body {
@@ -403,6 +450,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: large;
 }
 main .presentation {

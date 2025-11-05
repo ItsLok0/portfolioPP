@@ -19,32 +19,31 @@
                 <p>N'hesitez pas à me contacter pour plus d'informations ou pour toute opportunité.</p>
 
                 <div class="info-link">
-                    <p><span>M'envoyer un email</span></p>
-                    <form id="contact-form">
-                        <input type="text" name="user_name" placeholder="Nom" required />
-                        <input type="email" name="user_email" placeholder="Email" required />
-                        <textarea name="message" placeholder="Message" required></textarea>
-                        <button type="submit">Envoyer</button>
-                    </form>
-
-                    <script>
-                    emailjs.init({ publicKey: "lTQey6H_RUSJXE1Ho" });
-
-                    document.getElementById('contact-form').addEventListener('submit', (e) => {
-                        e.preventDefault();
-                        emailjs.sendForm('service_qmbkraq', 'template_02sgklv', e.target)
-                        .then(() => {
-                            alert('Message envoyé ✅');
-                            e.target.reset();
-                        })
-                        .catch((error) => {
-                            console.error('Erreur EmailJS:', error);
-                            alert('Erreur lors de l\'envoie ❌');
-                        });
-                    });
-                    </script>
-
-
+                    <div class="contact-form">
+                        <h3><span class="underline">M'envoyer un email</span></h3>
+                        <form id="contact-form">
+                            <label for="user_name" class="sr-only">Nom</label>
+                            <input id="user_name" type="text" name="user_name" placeholder="Nom" required />
+                            <label for="user_email" class="sr-only">Email</label>
+                            <input id="user_email" type="email" name="user_email" placeholder="Email" required />
+                            <label for="message" class="sr-only">Entrer votre message</label>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                            <input type="text" class="trap" name="trap" tabindex="-1" autocomplete="off"/>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                    <div class="links">
+                        <div>  
+                            <h3><span class="underline">Liens utiles</span></h3>
+                            <ul>
+                                <li>Linkedin</li>
+                                <li>Github</li>
+                            </ul>
+                            <h3><span class="underline">Adresse</span></h3>
+                            <p>Tourcoing 59200,</p>
+                            <p>France</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -52,3 +51,25 @@
     <?php include '../includes/footer.php'; ?>
 </body>
 </html>
+
+<script>
+    emailjs.init({ publicKey: "lTQey6H_RUSJXE1Ho" });
+
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Protection contre bots
+        if (e.target.trap.value !== "") {
+            return;
+        }
+
+        emailjs.sendForm('service_qmbkraq', 'template_02sgklv', e.target)
+        .then(() => {
+            alert('Message envoyé avec succès ✅');
+            e.target.reset();
+        })
+        .catch((error) => {
+            alert('Erreur lors de l\'envoie du message ❌');
+        });
+    });
+</script>
