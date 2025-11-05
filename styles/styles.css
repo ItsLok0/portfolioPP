@@ -367,16 +367,36 @@ h3 {
   gap: 0.8rem;
   display: grid;
 }
-#contact .content span {
-  color: var(--main-color);
-  font-weight: bold;
+@media (max-width: 804px) {
+  #contact .content {
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .content p, #contact .content h3 {
+    text-align: center;
+  }
 }
 #contact .content .info-link {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 804px) {
+  #contact .content .info-link {
+    flex-direction: column;
+  }
+}
 #contact .content .info-link div {
   width: 100%;
+}
+@media (max-width: 804px) {
+  #contact .content .info-link div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #contact .content .info-link .contact-form form {
   width: 75%;
@@ -407,16 +427,55 @@ h3 {
   font-size: larger;
 }
 #contact .content .info-link .links {
-  font-size: large;
+  font-size: medium;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 804px) {
+  #contact .content .info-link .links {
+    align-items: center;
+  }
+}
+#contact .content .info-link .links div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 #contact .content .info-link .links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   gap: 0.4rem;
   display: grid;
+  font-size: large;
+  width: 39%;
+}
+@media (max-width: 804px) {
+  #contact .content .info-link .links ul {
+    justify-content: center;
+  }
+}
+#contact .content .info-link .links ul a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 75%;
+  fill: #f5f5f5;
+}
+#contact .content .info-link .links ul a:hover, #contact .content .info-link .links ul a:focus {
+  color: var(--main-color);
+  cursor: pointer;
+  fill: var(--main-color);
+}
+#contact .content .info-link .links ul a span {
+  margin-right: 0.5rem;
+}
+#contact .content .info-link .links ul a svg {
+  width: 15px;
+  height: 15px;
 }
 
 body {
