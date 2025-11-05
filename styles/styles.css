@@ -380,6 +380,7 @@ h3 {
 }
 #contact .content .info-link {
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -446,7 +447,7 @@ h3 {
 #contact .content .info-link .links ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   gap: 0.4rem;
   display: grid;
   font-size: large;
@@ -476,6 +477,46 @@ h3 {
 #contact .content .info-link .links ul a svg {
   width: 15px;
   height: 15px;
+}
+
+.tabs {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tabs .title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tabs .title h2 {
+  text-align: center;
+  color: #f5f5f5;
+}
+.tabs .tablist {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tabs .tablist .blur {
+  width: 100%;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tabs .tabpanel {
+  width: 100%;
+  height: 50vh;
+  border-top-left-radius: 0;
+}
+.tabs .tabpanel .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 body {

@@ -1,0 +1,48 @@
+@use './../colors.scss' as colors;
+
+.tabs {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            color: colors.$white;
+        }
+    }
+
+    .tablist {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+        .blur{
+            width: 100%;
+            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    .tabpanel {
+        width: 100%;
+        height: 50vh;
+        border-top-left-radius: 0;
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}

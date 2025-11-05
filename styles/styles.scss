@@ -5,7 +5,8 @@
 @use 'includes/cli.scss';
 @use 'colors.scss' as colors;
 @use 'theme.scss';
-@use 'includes/contact.scss';
+@use 'pages/contact.scss';
+@use 'pages/projects.scss';
 
 body {
     min-height: 100vh;

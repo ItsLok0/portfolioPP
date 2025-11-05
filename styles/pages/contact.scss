@@ -36,6 +36,7 @@
 
         .info-link {
             width: 100%;
+            margin-top: 2rem;
             display: flex;
             justify-content: space-between;
 
@@ -109,7 +110,7 @@
                 ul {
                     list-style: none;
                     padding: 0;
-                    margin: 0;
+                    margin: 0 0 1.5rem 0;
                     gap: .4rem;
                     display: grid;
                     font-size: large;

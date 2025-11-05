@@ -19,9 +19,9 @@
     <div class="content blur interets">
         <h3>Intérêts</h3>
         <ul>
-            <li>Formule 1</li>
-            <li>Pratique sportive (musculation, course à pied)</li>
-            <li>Bourse/Crypto</li>
+            <li>Jeux vidéo (automatisation)</li>
+            <li>Passioné de Formule 1</li>
+            <li>Salle de sport</li>
         </ul>
     </div>
 </div>

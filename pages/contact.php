@@ -20,7 +20,7 @@
 
                 <div class="info-link">
                     <div class="contact-form">
-                        <h3><span class="underline">M'envoyer un email</span></h3>
+                        <h3>M'envoyer un email</h3>
                         <form id="contact-form">
                             <label for="user_name" class="sr-only">Nom</label>
                             <input id="user_name" type="text" name="user_name" placeholder="Nom" required />
@@ -34,7 +34,7 @@
                     </div>
                     <div class="links">
                         <div>  
-                            <h3><span class="underline">Liens utiles</span></h3>
+                            <h3>Liens utiles</h3>
                             <ul>
                                 <li>
                                     <a href="">
@@ -53,8 +53,13 @@
                                     </a>
                                 </li>
                             </ul>
-                            <h3><span class="underline">Adresse</span></h3>
-                            <p>Tourcoing, France</p>
+                            <h3>Adresse</h3>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="9" viewBox="0 0 320 512">
+                                    <path fill="#ffffff" d="M192 284.4C256.1 269.9 304 212.5 304 144 304 64.5 239.5 0 160 0S16 64.5 16 144c0 68.5 47.9 125.9 112 140.4L128 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-195.6zM168 96c-30.9 0-56 25.1-56 56 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4 46.6-104 104-104 13.3 0 24 10.7 24 24s-10.7 24-24 24z"/>
+                                </svg>
+                                Tourcoing, France
+                            </p>
                         </div>
                     </div>
                 </div>
