@@ -12,9 +12,10 @@
 <body>
     <?php include '../includes/header.php'; ?>
     <main>
+        <script src="js/pages/projects.js"></script>
         <section class="tabs">
             <div class="title">
-                <h2 id="tablist-1" class="blur">Mes expériences et projets</h2>
+                <h2 id="tablist-1" class="blur">Expériences et projets</h2>
             </div>
             <div class="tablist" role="tablist" aria-labelledby="tablist-1">
                 <button id="tab-1"
@@ -42,6 +43,15 @@
                 aria-labelledby="tab-1">
                     <div class="content">
                         <h2>Expériences</h2>
+                    </div>
+            </div>
+            <div id="panel-2"
+                class="tabpanel blur isHidden"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-2">
+                    <div class="content">
+                        <h2>Projets</h2>
                     </div>
             </div>
         </section>
