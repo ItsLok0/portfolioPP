@@ -150,6 +150,26 @@
                         border: 1px solid var(--border);
                     }
                 }
+
+                a {
+                    text-decoration: none;
+                    justify-content: space-between;
+                    align-items: center;
+                    min-width: 50%;
+                    fill: colors.$white;
+
+                    &:hover, &:focus {
+                        color: var(--main-color);
+                        cursor: pointer;
+                        fill: var(--main-color);
+                    }
+
+                    svg {
+                        margin: 0 0 0 0.5rem;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
             }
         }
     }

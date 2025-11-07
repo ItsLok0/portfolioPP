@@ -101,19 +101,22 @@
                 <div class="content">
                     <!-- Projet 1 -->
                     <article class="projet blur">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
                             <path fill="#ffffff" d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z"/>
                         </svg>
                         <h3>Site portfolio</h3>
-                        <p class="desc">Création de mon portfolio afin de présenter mes compétences / expériences.</p>
+                        <p class="desc">Création de mon portfolio afin de présenter mes compétences, expériences et projets.</p>
                         <ul class="tech-list">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
                         <div class="project-links">
-                            <a href="#" aria-label="Voir le code source">
-                                Lien GitHub
+                            <a href="https://github.com/ItsLok0/portfolioPP" target="_blank" aria-label="Voir le code source sur Github dans une nouvelle fenêtre">
+                                Lien Github
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
+                                </svg>
                             </a>
                         </div>
                     </article>
