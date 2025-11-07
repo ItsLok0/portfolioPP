@@ -6,7 +6,7 @@
             <li><span>Envrionnement :</span> Angular, PHPMyAdmin, PostgresSQL</li>
             <li><span>OS :</span> Linux, Windows, MacOS</li>
             <li><span>Méthodologie :</span> UML, MCD/MLD, Agile/SCRUM</li>
-            <li><span class="underline">Connaissances des notions d'accessibilités WEB</span></li>
+            <li><span>Connaissances des notions d'accessibilités WEB</span></li>
         </ul>
     </div>
     <div class="content blur langues">

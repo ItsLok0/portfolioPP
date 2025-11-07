@@ -345,6 +345,8 @@ h3 {
 
 .underline {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 #contact {
@@ -564,7 +566,7 @@ h3 {
   flex-direction: column;
   gap: 1rem;
 }
-.tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .experience p, .tabs .tabpanel .content .projet h3, .tabs .tabpanel .content .projet p {
+.tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .experience h4, .tabs .tabpanel .content .experience p, .tabs .tabpanel .content .projet h3, .tabs .tabpanel .content .projet h4, .tabs .tabpanel .content .projet p {
   margin: 0;
 }
 .tabs .tabpanel .content .experience svg, .tabs .tabpanel .content .projet svg {
