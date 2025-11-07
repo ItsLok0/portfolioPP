@@ -522,8 +522,8 @@ h3 {
   }
 }
 .tabs .tablist button[aria-selected=true] {
-  background-color: var(--border);
-  color: #000000;
+  border-top-width: 7px;
+  border-bottom-color: transparent;
 }
 .tabs .tablist button span {
   box-sizing: border-box;
@@ -547,10 +547,44 @@ h3 {
   min-height: 50vh;
   border-top-left-radius: 0;
 }
+.tabs .tabpanel h2 {
+  text-align: center;
+}
 .tabs .tabpanel .content {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 3rem;
+}
+.tabs .tabpanel .content .experience, .tabs .tabpanel .content .projet {
+  max-width: 350px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .experience p, .tabs .tabpanel .content .projet h3, .tabs .tabpanel .content .projet p {
+  margin: 0;
+}
+.tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .projet h3 {
+  margin-bottom: 2rem;
+}
+.tabs .tabpanel .content .experience .date, .tabs .tabpanel .content .projet .date {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #808080;
+}
+.tabs .tabpanel .content .experience .details, .tabs .tabpanel .content .projet .details {
+  margin-bottom: 1rem;
+  color: #dddddd;
+}
+.tabs .tabpanel .content .experience ul, .tabs .tabpanel .content .projet ul {
+  flex: 1;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.tabs .tabpanel .content .experience ul li, .tabs .tabpanel .content .projet ul li {
+  margin-bottom: 0.5rem;
 }
 
 body {

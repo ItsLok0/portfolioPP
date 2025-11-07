@@ -13,14 +13,14 @@
         <h3>Langues</h3>
         <ul>
             <li><span>Français :</span> langue maternelle</li>
-            <li><span>Anglais :</span> B2</li>
+            <li><span>Anglais :</span> B1/B2</li>
         </ul>
     </div>
     <div class="content blur interets">
         <h3>Intérêts</h3>
         <ul>
-            <li>Jeux vidéo (automatisation)</li>
-            <li>Passioné de Formule 1</li>
+            <li>Jeux vidéo (automatisation, gestion)</li>
+            <li>Passionné de Formule 1</li>
             <li>Salle de sport</li>
         </ul>
     </div>
