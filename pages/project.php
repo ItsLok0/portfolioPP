@@ -101,19 +101,21 @@
                 <div class="content">
                     <!-- Projet 1 -->
                     <article class="projet blur">
-                        <h3>Développeur Web — Urbilog / Compéthance</h3>
-                        <p class="date">Septembre 2022 → Novembre 2024</p>
-                        <p class="details">1 an d’alternance + 1 an en CDI</p>
-                        <ul>
-                            <li>Développement Angular, PHP, Wordpress et Google Script</li>
-                            <li>Découverte et mise en pratique de l’accessibilité numérique</li>
-                            <li>Travail en mode projet (méthode agile)</li>
-                            <li>Participation à un projet en délégation</li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#ffffff" d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z"/>
+                        </svg>
+                        <h3>Site portfolio</h3>
+                        <p class="desc">Création de mon portfolio afin de présenter mes compétences / expériences.</p>
+                        <ul class="tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
-                        <p class="tech">
-                            <span class="underline">Technologies :</span>
-                            Angular, PHP, Wordpress, Git, Google Script
-                        </p>
+                        <div class="project-links">
+                            <a href="#" aria-label="Voir le code source">
+                                Lien GitHub
+                            </a>
+                        </div>
                     </article>
                 </div>
             </div>

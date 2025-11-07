@@ -562,21 +562,30 @@ h3 {
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .experience p, .tabs .tabpanel .content .projet h3, .tabs .tabpanel .content .projet p {
   margin: 0;
 }
+.tabs .tabpanel .content .experience svg, .tabs .tabpanel .content .projet svg {
+  width: 100px;
+  align-self: center;
+  margin: 2rem;
+}
 .tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .projet h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 .tabs .tabpanel .content .experience .date, .tabs .tabpanel .content .projet .date {
   font-style: italic;
-  margin-bottom: 1rem;
   color: #808080;
 }
 .tabs .tabpanel .content .experience .details, .tabs .tabpanel .content .projet .details {
   margin-bottom: 1rem;
+  font-style: italic;
   color: #dddddd;
+}
+.tabs .tabpanel .content .experience .desc, .tabs .tabpanel .content .projet .desc {
+  margin-bottom: 1rem;
 }
 .tabs .tabpanel .content .experience ul, .tabs .tabpanel .content .projet ul {
   flex: 1;
@@ -585,6 +594,21 @@ h3 {
 }
 .tabs .tabpanel .content .experience ul li, .tabs .tabpanel .content .projet ul li {
   margin-bottom: 0.5rem;
+}
+.tabs .tabpanel .content .experience .tech-list, .tabs .tabpanel .content .projet .tech-list {
+  flex: none;
+  list-style: none;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tabs .tabpanel .content .experience .tech-list li, .tabs .tabpanel .content .projet .tech-list li {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
 }
 
 body {

@@ -17,7 +17,7 @@
                 <div class="intro">
                     <h1 class="name">Pierre Parent - Développeur web</h1>
                 </div>
-                <p class="desc">Passioné par le <span>développement web</span> et sensible aux notions <span>d'accessibilités numérique (RGAA)</span></p>
+                <p class="desc">Passionné par le <span>développement web</span> et sensible aux notions <span>d'accessibilités numérique (RGAA)</span></p>
                 <div class="link">
                     <a href="fichier/Pierre_Parent_CV.pdf" class="blur btn" target="_blank" rel="noopener"
                     aria-label="Afficher dans une nouvelle fenêtre le CV de Pierre Parent au format PDF">
