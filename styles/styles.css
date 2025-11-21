@@ -569,10 +569,14 @@ h3 {
 .tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .experience h4, .tabs .tabpanel .content .experience p, .tabs .tabpanel .content .projet h3, .tabs .tabpanel .content .projet h4, .tabs .tabpanel .content .projet p {
   margin: 0;
 }
-.tabs .tabpanel .content .experience svg, .tabs .tabpanel .content .projet svg {
+.tabs .tabpanel .content .experience svg, .tabs .tabpanel .content .experience img, .tabs .tabpanel .content .projet svg, .tabs .tabpanel .content .projet img {
   width: 100px;
   align-self: center;
   margin: 2rem;
+  height: 100px;
+}
+.tabs .tabpanel .content .experience img, .tabs .tabpanel .content .projet img {
+  width: 150px;
 }
 .tabs .tabpanel .content .experience h3, .tabs .tabpanel .content .projet h3 {
   margin-bottom: 0.5rem;
@@ -611,6 +615,9 @@ h3 {
   border-radius: 0.5rem;
   border-radius: 1rem;
   border: 1px solid var(--border);
+}
+.tabs .tabpanel .content .experience .project-learning, .tabs .tabpanel .content .projet .project-learning {
+  flex: 1;
 }
 .tabs .tabpanel .content .experience a, .tabs .tabpanel .content .projet a {
   text-decoration: none;

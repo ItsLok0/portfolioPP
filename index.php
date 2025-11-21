@@ -19,7 +19,7 @@
                 </div>
                 <p class="desc">Passionné par le <span>développement web</span> et sensible aux notions <span>d'accessibilités numérique (RGAA)</span></p>
                 <div class="link">
-                    <a href="fichier/Pierre_Parent_CV.pdf" class="blur btn" target="_blank" rel="noopener"
+                    <a href="fichier/PP_CV.pdf" class="blur btn" target="_blank" rel="noopener"
                     aria-label="Afficher dans une nouvelle fenêtre le CV de Pierre Parent au format PDF">
                         Afficher mon CV
                     </a>

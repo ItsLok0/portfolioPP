@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Pierre Parent</title>
+    <title>Projets et expériences - Portfolio Pierre Parent</title>
     <base href="/portfolioPP/">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/script.js"></script>
@@ -108,23 +108,56 @@
                         <p class="desc">Création de mon portfolio afin de présenter mes compétences, expériences et projets.</p>
                         <ul class="tech-list">
                             <li>HTML</li>
-                            <li>CSS</li>
+                            <li>SCSS</li>
                             <li>JavaScript</li>
                         </ul>
                         <div class="project-learning">
-                            <h4>Points d’apprentissage :</h4>
+                            <h4>Points d'apprentissage :</h4>
                             <ul>
                                 <li>Sémantique HTML : sections, article</li>
                                 <li>CSS responsive : Flex, grid</li>
                                 <li>JavaScript : formulaire, cookie, interactivité</li>
-                                <li>Mise en oeuvre de pratiques d'accesibilité</li>
+                                <li>Mise en oeuvre de pratiques d'accessibilité</li>
                                 <li>UX/UI : design claire et cohérent</li>
 
                             </ul>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ItsLok0/portfolioPP" target="_blank" aria-label="Voir le code source sur Github dans une nouvelle fenêtre">
-                                <span class="underline">Lien Github</span>
+                            <a href="https://github.com/ItsLok0/portfolioPP" target="_blank" aria-label="Voir le code source sur Github (nouvelle fenêtre)">
+                                <span class="underline">Github</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="projet blur">
+                        <img src="./img/todo-img.png" alt="">
+                        <h3>Application To-Do List</h3>
+                        <p class="desc">Développement d'une application de gestion de tâches avec Flask, Python et une base de données SQLite.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>SQLite</li>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                        </ul>
+                        <div class="project-learning">
+                            <h4>Points d'apprentissage :</h4>
+                            <ul>
+                                <li>Flask : route, templates</li>
+                                <li>SQLAlchemy : modèle, migrations simples</li>
+                                <li>Gestion d'un CRUD simple : ajouter, afficher, supprimer</li>
+                                <li>Organisation d'un projet SCSS avec variables, base, layout et composants</li>
+                                <li>Mise en oeuvre de pratiques d'accessibilité</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsLok0/TO-DO-list" target="_blank" aria-label="Voir le code source sur Github (nouvelle fenêtre)">
+                                <span class="underline">Github</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
                                 </svg>

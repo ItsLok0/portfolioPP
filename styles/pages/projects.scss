@@ -99,10 +99,15 @@
                     margin: 0;
                 }
 
-                svg {
+                svg, img {
                     width: 100px;
                     align-self: center;
                     margin: 2rem;
+                    height: 100px;
+                }
+
+                img {
+                    width: 150px;
                 }
 
                 h3 {
@@ -149,6 +154,10 @@
                         border-radius: 1rem;
                         border: 1px solid var(--border);
                     }
+                }
+
+                .project-learning {
+                    flex: 1;
                 }
 
                 a {
