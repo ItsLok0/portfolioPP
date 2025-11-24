@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets et expériences - Portfolio Pierre Parent</title>
     <base href="/portfolioPP/">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
     <main>
-        <script src="js/pages/projects.js"></script>
+        <script src="/js/pages/projects.js"></script>
         <section class="tabs">
             <div class="title">
                 <h1 id="tablist-1" class="blur">Expériences et projets</h1>
@@ -134,7 +134,7 @@
 
                     <!-- Projet 2 -->
                     <article class="projet blur">
-                        <img src="./img/todo-img.png" alt="">
+                        <img src="/img/todo-img.png" alt="">
                         <h3>Application To-Do List</h3>
                         <p class="desc">Développement d'une application de gestion de tâches avec Flask, Python et une base de données SQLite.
                         </p>

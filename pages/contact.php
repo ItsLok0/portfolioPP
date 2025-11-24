@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Portfolio Pierre Parent</title>
     <base href="/portfolioPP/">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js"></script>
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
