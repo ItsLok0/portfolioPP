@@ -4,15 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets et expériences - Portfolio Pierre Parent</title>
-    <base href="/portfolioPP/">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/includes/header.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <header class="header">
+        <nav class="navbar blur" role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="../img/logo.png" alt="" width="50" height="50">
+            </div>
+    
+            <button id="burger" aria-label="Afficher le menu" aria-expanded="false"
+            class="menu-burger" aria-controls="main-menu">
+                <img src="../img/menu-btn.svg" id="imgBtn" alt="">
+            </button>
+    
+            <div class="nav" id="main-menu">
+                <div class="navLink">
+                    <ul>
+                        <li>
+                            <a class="link active" href="../index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="link" href="../pages/project.html">Projets & expériences</a>
+                        </li>
+                        <li>
+                            <a class="link" href="../pages/contact.html">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="themeSwap">
+                    <label class="sr-only" for="theme-selector">Changer de thème :</label>
+                    <select id="theme-selector">
+                        <option value="Redbull" selected>Redbull</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="McLaren">McLaren</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
-        <script src="/js/pages/projects.js"></script>
+        <script src="../js/pages/projects.js"></script>
         <section class="tabs">
             <div class="title">
                 <h1 id="tablist-1" class="blur">Expériences et projets</h1>
@@ -125,7 +162,7 @@
                         <div class="project-links">
                             <a href="https://github.com/ItsLok0/portfolioPP" target="_blank" aria-label="Voir le code source sur Github (nouvelle fenêtre)">
                                 <span class="underline">Github</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
                                     <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
                                 </svg>
                             </a>
@@ -134,7 +171,7 @@
 
                     <!-- Projet 2 -->
                     <article class="projet blur">
-                        <img src="/img/todo-img.png" alt="">
+                        <img src="../img/todo-img.png" alt="" aria-hidden="true">
                         <h3>Application To-Do List</h3>
                         <p class="desc">Développement d'une application de gestion de tâches avec Flask, Python et une base de données SQLite.
                         </p>
@@ -158,7 +195,42 @@
                         <div class="project-links">
                             <a href="https://github.com/ItsLok0/TO-DO-list" target="_blank" aria-label="Voir le code source sur Github (nouvelle fenêtre)">
                                 <span class="underline">Github</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                                    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="projet blur">
+                        <img src="../img/dashboard.png" alt="" aria-hidden="true">
+                        <h3>Dashboard</h3>
+                        <p class="desc">Développement d'un dashboard proposant différentes fonctionnalités : météo, suivi de tâches, etc.</p>
+                        <p class="inDev">(Projet personnel, encore en cour de développement.)</p>
+                        <ul class="tech-list">
+                            <li>Angular</li>
+                            <li>Firebase</li>
+                            <li>TypeScript</li>
+                            <li>API</li>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                        </ul>
+                        <div class="project-learning">
+                            <h4>Points d'apprentissage :</h4>
+                            <ul>
+                                <li>Angular : architecture, composants, services</li>
+                                <li>Firebase : base de données en temps réel</li>
+                                <li>TypeScript : typage</li>
+                                <li>Intégration d'API externes</li>
+                                <li>Organisation d'un projet SCSS avec variables, base, layout et composants</li>
+                                <li>Mise en oeuvre de pratiques d'accessibilité</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsLok0/Mini-Dashboard" target="_blank" aria-label="Voir le code source sur Github (nouvelle fenêtre)">
+                                <span class="underline">Github</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
                                     <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/>
                                 </svg>
                             </a>
@@ -168,6 +240,23 @@
             </div>
         </section>
     </main>
-    <?php include '../includes/footer.php'; ?>
+    <footer class="footer">
+        <script src="../js/includes/footer.js"></script>
+        <div class="content blur">
+            <div class="logo">
+                <img src="../img/logo.png" alt="" width="50" height="50">
+                <p>Pierre Parent</p>
+            </div>
+            <div class="link">
+                <!-- <p>Lien</p> -->
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Pierre, 2025</p>
+                <div class="info">
+                    <div id="time"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

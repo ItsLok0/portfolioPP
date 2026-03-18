@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pierre Parent</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/includes/header.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar blur" role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="img/logo.png" alt="" width="50" height="50">
+            </div>
+    
+            <button id="burger" aria-label="Afficher le menu" aria-expanded="false"
+            class="menu-burger" aria-controls="main-menu">
+                <img src="img/menu-btn.svg" id="imgBtn" alt="">
+            </button>
+    
+            <div class="nav" id="main-menu">
+                <div class="navLink">
+                    <ul>
+                        <li>
+                            <a class="link active" href="index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="link" href="pages/project.html">Projets & expériences</a>
+                        </li>
+                        <li>
+                            <a class="link" href="pages/contact.html">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="themeSwap">
+                    <label class="sr-only" for="theme-selector">Changer de thème :</label>
+                    <select id="theme-selector">
+                        <option value="Redbull" selected>Redbull</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="McLaren">McLaren</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="presentation">
+            <div class="blur">
+                <div class="intro">
+                    <h1 class="name">Pierre Parent - Développeur web</h1>
+                </div>
+                <p class="desc">Passionné par le <span>développement web</span> et sensible aux notions <span>d'accessibilités numérique (RGAA)</span></p>
+                <div class="link">
+                    <a href="fichier/PP_CV.pdf" class="blur btn" target="_blank" rel="noopener"
+                    aria-label="Afficher dans une nouvelle fenêtre le CV de Pierre Parent au format PDF">
+                        Afficher mon CV
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div id="apropos-placeholder"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <script src="js/includes/footer.js"></script>
+        <div class="content blur">
+            <div class="logo">
+                <img src="img/logo.png" alt="" width="50" height="50">
+                <p>Pierre Parent</p>
+            </div>
+            <div class="link">
+                <!-- <p>Lien</p> -->
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Pierre, 2025</p>
+                <div class="info">
+                    <div id="time"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    fetch('includes/apropos.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('apropos-placeholder').innerHTML = data;
+        });
+</script>
