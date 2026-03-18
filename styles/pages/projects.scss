@@ -11,6 +11,12 @@
     @media (max-width: 804px) {
         padding: 3rem;
     }
+
+    .inDev {
+        color: colors.$grey;
+        font-style: italic;
+        margin: 0;
+    }
     
     .title {
         display: flex;

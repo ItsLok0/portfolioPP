@@ -3,15 +3,52 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Portfolio Pierre Parent</title>
-    <base href="/portfolioPP/">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <script src="/js/script.js"></script>
+    <title>Contact - Portfolio Pierre Parent</title>    
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/includes/header.js"></script>
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <header class="header">
+        <nav class="navbar blur" role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="../img/logo.png" alt="" width="50" height="50">
+            </div>
+    
+            <button id="burger" aria-label="Afficher le menu" aria-expanded="false"
+            class="menu-burger" aria-controls="main-menu">
+                <img src="../img/menu-btn.svg" id="imgBtn" alt="">
+            </button>
+    
+            <div class="nav" id="main-menu">
+                <div class="navLink">
+                    <ul>
+                        <li>
+                            <a class="link active" href="../index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="link" href="../pages/project.html">Projets & expériences</a>
+                        </li>
+                        <li>
+                            <a class="link" href="../pages/contact.html">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="themeSwap">
+                    <label class="sr-only" for="theme-selector">Changer de thème :</label>
+                    <select id="theme-selector">
+                        <option value="Redbull" selected>Redbull</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="McLaren">McLaren</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <section id="contact" class="contact blur">
             <div class="content">
@@ -66,7 +103,24 @@
             </div>
         </section>
     </main>
-    <?php include '../includes/footer.php'; ?>
+    <footer class="footer">
+        <script src="../js/includes/footer.js"></script>
+        <div class="content blur">
+            <div class="logo">
+                <img src="../img/logo.png" alt="" width="50" height="50">
+                <p>Pierre Parent</p>
+            </div>
+            <div class="link">
+                <!-- <p>Lien</p> -->
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Pierre, 2025</p>
+                <div class="info">
+                    <div id="time"></div>
+                </div>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>
 

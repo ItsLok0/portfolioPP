@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mainMenu.classList.remove('open');
     burgerButton.setAttribute('aria-expanded', 'false');
     burgerButton.setAttribute('aria-label', 'Afficher le menu');
-    imgBtn.src = "./img/menu-btn.svg";
+    imgBtn.src = "img/menu-btn.svg";
 
     // Remettre focus sur btn burger
     burgerButton.focus();
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (isOpen) {
         burgerButton.setAttribute('aria-label', 'Masquer le menu');
-        imgBtn.src = "./img/cross-btn.svg";
+        imgBtn.src = "img/cross-btn.svg";
 
         // Ajouter gestion Escape
         document.addEventListener('keydown', handleEscape);
