@@ -125,7 +125,7 @@
 </html>
 
 <script>
-    emailjs.init({ publicKey: "service_4jokwi7" });
+    emailjs.init({ publicKey: "lTQey6H_RUSJXE1Ho" });
 
     document.getElementById('contact-form').addEventListener('submit', (e) => {
         e.preventDefault();
@@ -135,7 +135,7 @@
             return;
         }
 
-        emailjs.sendForm('service_qmbkraq', 'template_02sgklv', e.target)
+        emailjs.sendForm('service_4jokwi7', 'template_02sgklv', e.target)
         .then(() => {
             alert('Message envoyé avec succès ✅');
             e.target.reset();
