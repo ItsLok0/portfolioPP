@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid var(--main-color);
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -490,7 +491,7 @@ h3 {
 }
 @media (max-width: 804px) {
   .tabs {
-    padding: 3rem;
+    padding: 1rem;
   }
 }
 .tabs .inDev {
