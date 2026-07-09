@@ -624,6 +624,9 @@ h3 {
 .tabs .tabpanel .content .experience .project-learning, .tabs .tabpanel .content .projet .project-learning {
   flex: 1;
 }
+.tabs .tabpanel .content .experience .project-links, .tabs .tabpanel .content .projet .project-links {
+  display: flex;
+}
 .tabs .tabpanel .content .experience a, .tabs .tabpanel .content .projet a {
   text-decoration: none;
   justify-content: space-between;
